@@ -1,0 +1,66 @@
+<view class="search-line" bindtap="openSearchPage">
+	<image src="/images/icon_search.png"></image>
+	<view>输入关键词搜索相关文章</view>
+</view>
+<view class="swiper-tab">
+	<view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">学院新闻</view>
+	
+	<view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">视频学习</view>
+</view>
+<swiper current="{{currentTab}}" bindchange="bindChange">
+	<swiper-item>
+		<view class="vertical-view" bindtap="itemClick" wx:for="{{list}}" wx:for-item="item" wx:key="index" data-index="{{index}}">
+			<view class="item-view">
+				<view class="item-subview">
+					<view style="margin: 12px 8px 0 0; font-size: 26rpx; font-weight: bold; width: 270px;">{{item.title}}</view>
+					<view class="item-subview-bottom">
+						<view style="margin: 8px 50px 8px 0; font-size: 24rpx; color: #707070;display:inline-block;width:59.66px">{{item.time}}</view>
+						<image src="{{item.path}}" data-index="{{index}}" catchtap="star"></image>
+						<view style="margin: 8px 0 8px 5px; font-size: 24rpx; color: #707070;">{{item.starNum}}</view>
+					</view>
+				</view>
+				<image src="{{item.image}}" mode="scaleToFill"></image>
+			</view>
+			<view class="line"></view>
+		</view>
+		<!-- <view class="vertical-view" bindtap="itemClick">
+			<view class="item-view">
+				<view class="item-subview">
+					<view style="margin: 12px 8px 0 0; font-size: 26rpx; font-weight: bold; width: 270px;">我院新媒体研究中心发表人工智能与大数据应用研究成果</view>
+					<view class="item-subview-bottom">
+						<view style="margin: 8px 50px 8px 0; font-size: 24rpx; color: #707070;">2019.12.25</view>
+						<image src="{{starImages[1].path}}" data-index="1" catchtap="star"></image>
+						<view style="margin: 8px 0 8px 5px; font-size: 24rpx; color: #707070;">15</view>
+					</view>
+				</view>
+				<image src="/images/icon_post2.png" mode="scaleToFill"></image>
+			</view>
+			<view class="line"></view>
+		</view> -->
+	</swiper-item>
+	<swiper-item>
+	  <view style="height:128rpx">
+			<view class="item-view" style="position:relative" bindtap="itemfirst">
+				<view class="item-subview">
+					<view style="margin: 44rpx 0 0 44rpx; font-size: 26rpx; font-weight: bold; width: 270px;">众志成城，共同抗疫——新冠肺炎科普视频</view>
+				</view>
+				<image src="/images/bofang.png"  mode="scaleToFill" style="width:64rpx;height:64rpx;position:absolute;right:44rpx"></image>
+			</view>
+			<view class="line"></view>
+			<view class="item-view" style="position:relative" bindtap="itemsecond">
+				<view class="item-subview">
+					<view style="margin: 44rpx 0 0 44rpx; font-size: 26rpx; font-weight: bold; width: 270px;">文学与传媒学院官方宣传视频</view>
+				</view>
+				<image src="/images/bofang.png"  mode="scaleToFill" style="width:64rpx;height:64rpx;position:absolute;right:44rpx"></image>
+			</view>
+			<view class="line"></view>
+			<view class="item-view" style="position:relative" bindtap="itemthird">
+				<view class="item-subview">
+					<view style="margin: 44rpx 0 0 44rpx; font-size: 26rpx; font-weight: bold; width: 270px;">胡老师讲Linux之虚拟主机实验</view>
+				</view>
+				<image src="/images/bofang.png"  mode="scaleToFill" style="width:64rpx;height:64rpx;position:absolute;right:44rpx"></image>
+			</view>
+			<view class="line"></view>
+		</view>
+	</swiper-item>
+</swiper>

@@ -1,0 +1,277 @@
+.all-view {
+  padding-right: 44rpx;
+  padding-left: 44rpx;
+}
+
+.all-view .title {
+  font-size: 36rpx;
+  color: #333333;
+  font-weight: bold;
+}
+
+.all-view .auth-view {
+  display: flex;
+  flex-flow: row;
+}
+
+.all-view .auth-view .auth-text {
+  font-size: 26rpx;
+  color: #707070;
+  margin-top: 8px;
+}
+
+.all-view .auth-view .time-text {
+  font-size: 26rpx;
+  color: #707070;
+  margin-left: 50px;
+  margin-top: 8px;
+}
+
+.search-line {
+  height: 40px;
+  width: 50%;
+  border-radius: 50in;
+  background-color: #ECECEC;
+  display: flex;
+  flex-flow: row;
+  margin-left: 12px;
+}
+
+.search-line view {
+  font-size: 26rpx;
+  line-height: 40px;
+  color: #888888;
+  margin-left: 8px;
+  font-size: 12px;
+}
+
+.line {
+  height: 1px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #EAEAEA;
+  margin-bottom: 8px;
+  margin-top: 8px;
+  position: fixed;
+  bottom: 52px;
+}
+
+.bottom-view {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-flow: row;
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 8px;
+  margin-top: 4px;
+}
+
+.bottom-view .subview {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  margin: auto 0;
+}
+
+.bottom-view .subview view {
+  line-height: 40px;
+  color: #707070;
+  font-size: 26rpx;
+  margin-left: 4px;
+}
+
+.bottom-view .subview image {
+  margin: auto 0;
+}
+
+.bottom-view .subview image {
+  width: 48rpx;
+  height: 48rpx;
+}
+
+.content-view {
+  margin-top: 28rpx;
+  color: #333333;
+  text-indent: 35px;
+}
+
+.comment-view {
+  width: 100%;
+  height: 400px;
+  min-height: 400px;
+  position: fixed;
+  bottom: 51px;
+  border-top-left-radius: 30rpx;
+  border-top-right-radius: 30rpx;
+  padding-left: 44rpx;
+  padding-right: 44rpx;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.comment-view scroll-view {
+  height: 340px;
+}
+
+/*隐藏滚动条*/
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+.comment-view .title {
+  color: #1796e6;
+  font-size: 30rpx;
+}
+
+.comment-view .comment-item {
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  margin-bottom: 33rpx;
+}
+
+.comment-item .other-view {
+  width: auto;
+  display: flex;
+  flex-flow: column;
+}
+
+.comment-item .other-view .content {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  font-size: 22rpx;
+  color: #707070;
+}
+
+.comment-item .other-view .top-view {
+  display: flex;
+  flex-flow: row;
+  position: relative;
+}
+
+.comment-item .other-view .top-view .name {
+  width: 60px;
+  font-size: 22rpx;
+  color: #707070;
+  margin-right: 4px;
+  font-weight: bold;
+  line-height: 20px;
+}
+
+.comment-item .other-view .top-view .date {
+  font-size: 20rpx;
+  color: #707070;
+  margin-right: 4px;
+  height: 20px;
+  line-height: 20px;
+}
+
+.comment-item .other-view .top-view .time {
+  font-size: 20rpx;
+  color: #707070;
+  margin-right: 4px;
+  height: 20px;
+  line-height: 20px;
+}
+
+.comment-item .other-view .top-view .count {
+  font-size: 20rpx;
+  color: #707070;
+  line-height: 20px;
+  position: absolute;
+  right: -100%;
+}
+
+.comment-item .other-view .top-view image {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: -125%;
+}
+
+.comment-item .comment-head-view {
+  width: 48rpx;
+  height: 48rpx;
+  margin-right: 8px;
+  flex-shrink: 0;
+}
+
+.comment-item .comment-head-view .comment-head {
+  width: 100%;
+  height: 100%;
+}
+
+.comment-item image {
+  width: 60px;
+  height: 30px;
+  margin-right: 8px;
+}
+
+.comment-view .line2 {
+  height: 1px;
+  width: 100%;
+  background-color: #EAEAEA;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.mask-view {
+  width: 100%;
+  height: 100% - 51px;
+  /* background-color: #4e4e4e; */
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0px;
+  bottom: 51px;
+}
+
+.send-view {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-flow: row;
+  position: fixed;
+  bottom: 0px;
+  margin-top: 8px;
+  margin-bottom: 4px;
+  background-color: white;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.send-view .send-button {
+  line-height: 50px;
+  font-size: 32rpx;
+  color: #1796e6;
+  margin-left: 12px;
+}
+
+.send-view .search-line {
+  height: 40px;
+  line-height: 40px;
+  width: 80%;
+  border-radius: 50in;
+  background-color: #ECECEC;
+  display: flex;
+  flex-flow: row;
+  margin-left: 12px;
+  margin: auto 0;
+}
+
+.send-view .search-line input {
+  width: 100%;
+  font-size: 26rpx;
+  color: #888888;
+  height: 40px;
+  margin-left: 8px;
+}
+
+.search-placeholder {
+  font-size: 12px;
+  color: #A7A5A3;
+}

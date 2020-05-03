@@ -1,0 +1,83 @@
+.all-view {
+  width: 100%;
+  height: 100%;
+  background-color: #F8F8F8;
+}
+
+.comment-item {
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  background-color: white;
+}
+
+.comment-item .other-view {
+  width: auto;
+  display: flex;
+  flex-flow: column;
+}
+
+.comment-item .other-view .bottom-view {
+  display: flex;
+  flex-flow: row;
+}
+
+.comment-item .other-view .content {
+  font-size: 26rpx;
+  color: #303030;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.comment-item .other-view .top-view {
+  display: flex;
+  flex-flow: row;
+}
+
+.comment-item .other-view .top-view .name {
+  font-size: 26rpx;
+  margin-right: 4px;
+  color: #1796e6;
+}
+
+
+.comment-item .other-view .bottom-view .time {
+  font-size: 20rpx;
+  color: #707070;
+  margin-right: 4px;
+  height: 20px;
+  line-height: 20px;
+}
+
+.comment-item .other-view .bottom-view image {
+  width: 20px;
+  height: 20px;
+  position: fixed;
+  right: 12px;
+}
+
+.comment-item .head-view {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: left;
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
+.comment-item .head-view image {
+  width: 100%;
+  height: 100%;
+}
+
+.line-view {
+  background-color: white;
+  padding-top: 8px;
+}
+
+.line-view .line {
+  width: 90%;
+  height: 1px;
+  margin: 8px auto 0 auto;
+  background-color: #eaeaea;
+}

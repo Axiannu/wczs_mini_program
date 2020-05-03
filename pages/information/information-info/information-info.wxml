@@ -1,0 +1,85 @@
+<view class="all-view">
+	<view class="title">{{detail.title}}</view>
+	<view class="auth-view">
+		<view class="auth-text">{{detail.auther}}</view>
+		<view class="time-text">{{detail.time}}</view>
+	</view>
+	<view class="content-view">{{detail.content}}</view>
+</view>
+<view class="line"></view>
+<view class="bottom-view">
+	<view class="search-line" bindtap="openSend">
+		<view>发表评论...</view>
+	</view>
+	<view class="subview" bindtap="openComment">
+		<image src="{{isCommentShow ? '/images/icon_message.png' : '/images/icon_comment.png'}}"></image>
+	</view>
+	<view class="subview" bindtap="articleStar">
+		<image src="{{star.path}}"></image>
+		<view>{{detail.starNum}}</view>
+	</view>
+	<view class="subview" bindtap="toast">
+		<image src="/images/icon_share.png"></image>
+	</view>
+</view>
+<view class="mask-view" hidden="{{isCommentShow ? false : true}}" bindtap="closeComment">
+	<view class="comment-view" hidden="{{isCommentShow ? false : true}}">
+		<view class="title">评论 {{commentList.length}}</view>
+		<view class="line2"></view>
+		<!-- <view class="comment-item">
+			<div class="comment-head-view">
+				<image class="comment-head" src="/images/avatar1.png" mode="scaleToFill"></image>
+			</div>
+			<view class="other-view">
+				<view class="top-view">
+					<view class="name">可爱的小红</view>
+					<view class="date">2月18号</view>
+					<view class="time">15:30</view>
+					<view class="count">233</view>
+					<image src="{{starImages[0].path}}" data-index="0" catchtap="star"></image>
+				</view>
+				<view class="content">你拿诗和远方和苟且斗，你永远斗不赢的。因为苟且有一万种需求，一万种痛苦，而诗和远方只有一种快乐。</view>
+			</view>
+		</view> -->
+		<scroll-view scroll-y="true">
+			<view class="comment-item" wx:for="{{commentList}}" wx:for-item="item" wx:key="index" data-index="{{index}}">
+				<view class="comment-head-view">
+					<image class="comment-head" src="{{item.headImage}}" mode="scaleToFill"></image>
+				</view>
+				<view class="other-view">
+					<view class="top-view">
+						<view class="name">{{item.name == undefined || item.name.length <= 0 ? '勇敢的小明' : item.name}}</view>
+						<view class="date">{{item.date}}</view>
+						<view class="time">{{item.time}}</view>
+						<view class="count">{{item.starNum}}</view>
+						<image src="{{item.path}}" data-index="{{index}}" catchtap="star"></image>
+					</view>
+					<view class="content">{{item.content}}</view>
+				</view>
+			</view>
+		</scroll-view>
+		<!-- <view class="comment-item">
+			<view class="comment-head-view">
+				<image class="comment-head" src="/images/avatar3.png" mode="scaleToFill"></image>
+			</view>
+			<view class="other-view">
+				<view class="top-view">
+					<view class="name">笨笨的小熊</view>
+					<view class="date">2月18号</view>
+					<view class="time">15:30</view>
+					<view class="count">233</view>
+					<image src="{{starImages[2].path}}" data-index="2" catchtap="star"></image>
+				</view>
+				<view class="content">这就跟猪肉盖章似得，不是同一个时候出厂，生活在我们身上烙下的印不同</view>
+			</view>
+		</view> -->
+	</view>
+</view>
+<view class="mask-view" hidden="{{isSendShow ? false : true}}" bindtap="closeSend">
+	<view class="send-view" hidden="{{isSendShow ? false : true}}" catchtap="catchtap">
+		<view class="search-line">
+			<input value="{{commentValue}}" placeholder='发表评论...' placeholder-class='search-placeholder' bindinput="bindCommentInput"></input>
+		</view>
+		<view class="send-button" bindtap="send">发表</view>
+	</view>
+</view>

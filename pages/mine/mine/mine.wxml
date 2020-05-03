@@ -1,0 +1,28 @@
+<view class="all-view">
+	<view class="userinfo">
+		<button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">授权登陆</button>
+		<block wx:else>
+			<image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+			<text class="userinfo-nickname">{{userInfo.nickName}}</text>
+		</block>
+	</view>
+	<view class="line"></view>
+	<view class="function-item" bindtap="gohistroy">
+		<image class="icon" src="/images/icon_histroy.png"></image>
+		<view>浏览记录</view>
+		<image class="goright" src="/images/icon_goright.png"></image>
+	</view>
+	<view class="line"></view>
+	<view class="function-item" bindtap="gosend">
+		<image class="icon" src="/images/icon_send.png"></image>
+		<view>我的发布</view>
+		<image class="goright" src="/images/icon_goright.png"></image>
+	</view>
+	<view class="line"></view>
+	<view class="function-item" bindtap="gomessage">
+		<image class="icon" src="/images/icon_message.png"></image>
+		<view>我的消息</view>
+		<image class="goright" src="/images/icon_goright.png"></image>
+	</view>
+	<view class="fill-line"></view>
+</view>

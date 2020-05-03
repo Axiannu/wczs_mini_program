@@ -1,0 +1,18 @@
+<view class="vertical-view" bindtap="itemClick" wx:for="{{list}}" wx:for-item="item" wx:key="index" data-index="{{index}}">
+	<view class="item-view">
+		<view class="item-subview">
+			<view style="margin: 12px 8px 0 0; font-size: 26rpx; font-weight: bold; width: 270px;">{{item.title}}</view>
+			<view class="item-subview-bottom">
+				<view style="margin: 8px 50px 8px 0; font-size: 24rpx; color: #707070;">{{item.time}}</view>
+						<image src="{{item.path}}" data-index="{{index}}" catchtap="star"></image>
+				<view style="margin: 8px 0 8px 5px; font-size: 24rpx; color: #707070;">{{item.starNum}}</view>
+			</view>
+		</view>
+		<image src="{{item.image}}" mode="scaleToFill"></image>
+	</view>
+	<view class="line"></view>
+</view>
+<view class="empty-view" hidden="{{list.length > 0 ? true : false}}">
+	<image src="/images/content_empty.png"></image>
+	<view class="empty-text">暂无搜索记录</view>
+</view>

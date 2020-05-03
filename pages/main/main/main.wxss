@@ -1,0 +1,208 @@
+.first-swiper {
+  width: 100%;
+  height: 200px;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  box-sizing: border-box;
+}
+
+.first-swiper swiper-item view {
+  width: 100%;
+  height: 200px;
+  line-height: 200px;
+  background-color: #d7d7d7;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.first-swiper swiper-item view image {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+}
+
+.line-view {
+  width: 90%;
+  height: 80px;
+  display: flex;
+  flex-flow: row;
+  margin: 12px auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.line-view .line-view-item {
+  width: auto;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+}
+
+.line-view .line-view-item image {
+  width: 40px;
+  height: 40px;
+}
+
+.line-view .line-view-item text {
+  font-size: 24rpx;
+  margin-top: 4px;
+  color: #333333;
+}
+
+.line2-view {
+  width: auto;
+  height: 30px;
+  /* margin: auto 0; */
+  display: flex;
+  flex-flow: row;
+  position: absolute;
+  right: 30rpx;
+  top: 10%;
+}
+
+.line2-view .school-text {
+  font-size: 10px;
+  line-height: 30px;
+  color: #1796e6;
+}
+
+.line2-view .send-button {
+  color: #1796e6;
+  font-size: 26rpx;
+  margin-left: 2px;
+  line-height: 30px;
+}
+
+.line2-view image {
+  height: 32rpx;
+  width: 32rpx;
+  vertical-align: middle;
+  margin: auto 0;
+}
+
+.swiper-tab {
+  width: 100%;
+  border-bottom: 2rpx solid gainsboro;
+  text-align: left;
+  line-height: 60rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row;
+  position: relative;
+}
+
+.swiper2 swiper-item {
+  display: flex;
+  flex-flow: column;
+}
+
+.swiper-tab-list {
+  font-size: 28rpx;
+  display: inline-block;
+  width: auto;
+  color: #777;
+  text-align: center;
+  font-weight: bold;
+}
+
+.on {
+  color: #1796e6;
+  font-weight: bold;
+  border-bottom: 5rpx solid #1796e6;
+  font-size: 28rpx;
+}
+
+.swiper2 {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper2 swiper-item {
+  margin-top: 8px;
+  padding-bottom: 8px;
+  box-sizing: border-box;
+  background-color: #F8F8F8;
+  overflow: scroll;
+}
+
+.swiper2 swiper-item .comment-item {
+  display: flex;
+  flex-flow: row;
+  padding-bottom: 12px;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  background-color: white;
+  /* width: 100%; */
+}
+
+.comment-item .other-view {
+  width: auto;
+  display: flex;
+  flex-flow: column;
+}
+
+.comment-item .other-view .bottom-view {
+  display: flex;
+  flex-flow: row;
+}
+
+.comment-item .other-view .content {
+  width: 100%;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  color: #303030;
+}
+
+.comment-item .other-view .top-view {
+  display: flex;
+  flex-flow: row;
+}
+
+.comment-item .other-view .top-view .name {
+  font-size: 14px;
+  margin-right: 4px;
+  color: #1796e6;
+}
+
+
+.comment-item .other-view .bottom-view .time {
+  font-size: 10px;
+  margin-right: 4px;
+  height: 20px;
+  line-height: 20px;
+  color: #707070;
+}
+
+.comment-item .other-view .bottom-view image {
+  width: 20px;
+  height: 20px;
+  position: fixed;
+  right: 50px;
+}
+
+.comment-item .other-view .bottom-view .star-view {
+  font-size: 10px;
+  height: 20px;
+  line-height: 20px;
+  position: fixed;
+  right: 35px;
+  color: #707070;
+}
+
+.comment-item image {
+  width: 35px;
+  height: 35px;
+  margin-right: 8px;
+}

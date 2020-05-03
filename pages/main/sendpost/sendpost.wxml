@@ -1,0 +1,4 @@
+<view class="content-view">
+	<textarea value="{{value}}" maxlength="-1" placeholder="请输入帖子内容" placeholder-class="input-placeholder" bindinput="bindKeyInput"></textarea>
+</view>
+<button bindtap="send">发布</button>

@@ -1,0 +1,84 @@
+<swiper class="first-swiper" autoplay="true" indicator-dots="true" circular="true">
+	<swiper-item bindtap="itemone">
+		<view>
+			<image src="/images/banner1.png"></image>
+		</view>
+	</swiper-item>
+	<swiper-item bindtap="itemtwo">
+		<view>
+			<image src="/images/banner2.png"></image>
+		</view>
+	</swiper-item>
+	<swiper-item bindtap="itemthree">
+		<view>
+			<image src="/images/linux.png"></image>
+		</view>
+	</swiper-item>
+</swiper>
+<view class='line-view' bindtap="toastBtn">
+	<view class='line-view-item'>
+		<image src='/images/icon_1.png'>
+		</image>
+		<text>文传精英</text>
+	</view>
+	<view class='line-view-item'>
+		<image src='/images/icon_2.png'>
+		</image>
+		<text>敢闯敢拼</text>
+	</view>
+	<view class='line-view-item'>
+		<image src='/images/icon_3.png'>
+		</image>
+		<text>飞扬青春</text>
+	</view>
+	<view class='line-view-item'>
+		<image src='/images/icon_4.png'>
+		</image>
+		<text>活力文传</text>
+	</view>
+</view>
+<view class="swiper-tab">
+	<view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">学院交流</view>
+	<view class='line2-view' bindtap="sendPost">
+		<image src='/images/icon_plus.png'></image>
+		<view class='send-button'>发布帖子</view>
+	</view>
+</view>
+<swiper class="swiper2" current="{{currentTab}}" bindchange="bindChange">
+	<swiper-item>
+		<scroll-view>
+			<view class="comment-item" wx:for='{{list}}' wx:for-item="item" wx:key="index">
+				<view class="avatar-view">
+					<image src="{{item.headImage}}"></image>
+				</view>
+				<view class="other-view">
+					<view class="top-view">
+						<view class="name">{{item.name}}</view>
+					</view>
+					<view class="content">{{item.content}}</view>
+					<view class="bottom-view">
+						<view class="time">{{item.time}}</view>
+						<image src="{{item.path}}" data-index="{{index}}" catchtap="star"></image>
+						<view class="star-view">点赞</view>
+					</view>
+				</view>
+			</view>
+			<!-- <view class="comment-item">
+			<image src="/images/avatar2.png"></image>
+			<view class="other-view">
+				<view class="top-view">
+					<view class="name">勤奋的小明</view>
+				</view>
+				<view class="content">我们自古以来，就有埋头苦干的人，有拼命硬干的人，有为民请命的人，有舍身求法的人……这都是中国的脊梁。</view>
+				<view class="bottom-view">
+					<view class="time">2020.04.01</view>
+					<image src="{{starImages[1].path}}" data-index="1" catchtap="star"></image>
+					<view class="star-view">点赞</view>
+				</view>
+			</view>
+		</view> -->
+		</scroll-view>
+	</swiper-item>
+</swiper>
+<toast id='toast'>
+</toast>

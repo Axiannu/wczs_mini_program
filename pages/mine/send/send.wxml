@@ -1,0 +1,7 @@
+<view class="all-view">
+	<view>
+			<image src="../../../images/liulan.jpg" style="width:294rpx;height:192rpx;margin-top:200rpx;margin-left:228rpx"></image>
+			<view style="margin-top:44rpx;text-align:center;color:#707070;font-size:28rpx">还没有发布过帖子哦，快去发布吧</view>
+	</view>
+	
+</view>

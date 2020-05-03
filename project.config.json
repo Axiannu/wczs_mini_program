@@ -1,0 +1,84 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"preloadBackgroundData": false,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false,
+		"coverView": true,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.10.3",
+	"appid": "wx3524bf7ab3f3e549",
+	"projectname": "wczs",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"cloudfunctionTemplateRoot": "cloudfunctionTemplate",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": 0,
+					"name": "pages/information/information-info/information-info",
+					"pathName": "pages/information/information-info/information-info",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 1,
+					"name": "pages/mine/message/message",
+					"pathName": "pages/mine/message/message",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "pages/mine/send/send",
+					"pathName": "pages/mine/send/send",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 3,
+					"name": "pages/mine/histroy/histroy",
+					"pathName": "pages/mine/histroy/histroy",
+					"query": "",
+					"scene": null
+				}
+			]
+		}
+	}
+}

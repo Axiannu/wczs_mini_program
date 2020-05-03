@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/main/main/main",
+    "pages/information/information/information",
+    "pages/mine/mine/mine",
+    "pages/information/information-info/information-info",
+    "pages/information/search/search",
+    "pages/information/result/result",
+    "pages/main/sendpost/sendpost",
+    "pages/mine/histroy/histroy",
+    "pages/mine/send/send",
+    "pages/mine/message/message",
+    "utils/toast/toast",
+    "pages/information/shipin/first/index",
+    "pages/information/shipin/second/index",
+    "pages/information/shipin/third/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#1796e6",
+    "list": [
+      {
+        "pagePath": "pages/main/main/main",
+        "text": "首页",
+        "iconPath": "/images/icon_main_normal.png",
+        "selectedIconPath": "/images/icon_main_select.png"
+      },
+      {
+        "pagePath": "pages/information/information/information",
+        "text": "学院资讯",
+        "iconPath": "/images/icon_information_normal.png",
+        "selectedIconPath": "/images/icon_information_select.png"
+      },
+      {
+        "pagePath": "pages/mine/mine/mine",
+        "text": "个人中心",
+        "iconPath": "/images/icon_mine_normal.png",
+        "selectedIconPath": "/images/icon_mine_select.png"
+      }
+    
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

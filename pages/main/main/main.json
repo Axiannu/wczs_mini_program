@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "toast": "/utils/toast/toast"
+  },
+  "navigationBarTitleText": "文传之声"
+}

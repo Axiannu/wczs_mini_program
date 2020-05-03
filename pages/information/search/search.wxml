@@ -1,0 +1,19 @@
+<view class="top-line">
+	<view class="search-line" bindtap="openSearchPage">
+		<image src="/images/icon_search.png"></image>
+		<input value="{{key}}" bindinput="bindKeyInput" placeholder='输入关键词搜索相关文章' placeholder-class='search-placeholder'></input>
+	</view>
+	<view class="search-button" bindtap="openResult">搜索</view>
+</view>
+<view class="histroy">
+	<view class="histroy-view">搜索历史</view>
+	<view class="clear" bindtap="clearClick">清空</view>
+</view>
+<view class="histroy-item" wx:for="{{list}}" wx:for-item="item" wx:key="index" bindtap="histroyClick" data-index="{{index}}">
+	<image src="/images/icon_search.png"></image>
+	<view>{{item}}</view>
+</view>
+<view class="empty-view" hidden="{{list.length > 0 ? true : false}}">
+	<image src="/images/content_empty.png"></image>
+	<view class="empty-text">暂无搜索记录</view>
+</view>
